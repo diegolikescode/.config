@@ -149,6 +149,16 @@ require('lazy').setup({
       end,
     },
   },
+	{ 'rose-pine/neovim',
+    name = 'rose-pine',
+    priority = 1000,
+    lazy = false,
+    config = function()
+      -- vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
+      -- vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
+      vim.cmd('colorscheme rose-pine')
+    end
+  },
 
   {
     'folke/tokyonight.nvim',
@@ -156,7 +166,7 @@ require('lazy').setup({
     lazy = false,
     opts = {},
     config = function()
-      vim.cmd.colorscheme 'tokyonight-night'
+      -- vim.cmd.colorscheme 'tokyonight-night'
     end,
 },
 
