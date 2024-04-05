@@ -101,6 +101,13 @@ require('lazy').setup({
     ft = "go",
   },
 
+  --[[
+  {
+    "mfussenegger/nvim-jdtls",
+    cmd = {'/home/camel/installs/jdt/eclipse.jdt.ls/org.eclipse.jdt.ls.product/target/repository/bin/jdtls'},
+  },
+  --]]
+
   {
     -- Autocompletion
     'hrsh7th/nvim-cmp',
